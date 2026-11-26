@@ -1,0 +1,4 @@
+mode,n,seconds,events_per_sec
+add() std,20000,0.8491,23554.6
+add_many() std,20000,0.6385,31322.9
+add_many() KM,20000,0.1351,148079.7

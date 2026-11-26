@@ -1,0 +1,19 @@
+seed: 42
+results_dir: experiments/results
+figures_dir: docs/figures
+docs_results: docs/results.md
+
+hll:
+  p: 14
+  trials: 30
+  quick_trials: 10
+  precisions: [8, 10, 12, 14, 16, 18]
+
+cms:
+  widths: [128, 256, 512, 1024, 2048]
+  depths: [2, 4, 6]
+  zipf_exponents: [0.8, 1.0, 1.2, 1.5]
+
+scalability:
+  sizes: [1000000, 5000000, 10000000, 50000000]
+  quick_sizes: [100000, 500000, 1000000, 5000000]

@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# Virtual environments & secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing / coverage / hypothesis
+.pytest_cache/
+.hypothesis/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+# mypy & ruff
+.mypy_cache/
+.ruff_cache/
+
+# Data, snapshots & temp files
+data/
+tmp/
+*.tmp
+*.log
+*.snap
+*.bak
+
+# OS
+.DS_Store
+Thumbs.db

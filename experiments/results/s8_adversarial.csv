@@ -1,0 +1,6 @@
+scenario,true_unique,hll_estimate,rel_err_pct
+empty_stream,0,0.0,0.0
+tiny_5_items,5,5.0,0.015
+all_identical_10k,1,1.0,0.003
+all_unique_10k,10000,10083.3,0.833
+extreme_skew_zipf2,142,141.6,0.274

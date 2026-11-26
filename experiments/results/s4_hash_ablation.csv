@@ -1,0 +1,5 @@
+hash_fn,seq_rel_err_pct,rand_rel_err_pct
+MurmurHash3,1.52,2.88
+BLAKE2b-64,3.71,0.29
+Python hash(),2.4,5.12
+Weak sum(bytes),99.99,99.99

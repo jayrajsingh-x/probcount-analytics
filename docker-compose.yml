@@ -1,0 +1,21 @@
+services:
+  api:
+    build: .
+    command: uvicorn probcount.api:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    environment:
+      - PROBCOUNT_ENABLE_EXACT=true
+      - PROBCOUNT_SNAPSHOT_DIR=/app/data/snapshots
+    volumes:
+      - ./data:/app/data
+
+  dashboard:
+    build: .
+    command: streamlit run dashboard/app.py --server.port 8501 --server.address 0.0.0.0 --server.headless true
+    ports:
+      - "8501:8501"
+    environment:
+      - PROBCOUNT_API_URL=http://api:8000
+    depends_on:
+      - api

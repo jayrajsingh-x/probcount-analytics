@@ -1,0 +1,3 @@
+method,n,seconds,events_per_sec
+add() loop,100000,1.8573,53841.3
+add_many() batch,100000,1.271,78677.8
